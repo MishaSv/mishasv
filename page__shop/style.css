@@ -241,6 +241,7 @@ color: #000000;
 .main__raiting_title div{
 	font-family: Mont-bold;
 	margin-bottom: 15px;
+	margin-right: 10px;	
 }
 
 
@@ -251,6 +252,7 @@ color: #000000;
 .main__raiting_bals div{
 	font-family: Mont-bold;
 	margin-bottom: 15px;
+	margin-left: 10px;
 }
 
 
@@ -1003,22 +1005,52 @@ background-repeat: no-repeat;
         margin-right: 20px;
         display: block;
     }
-    .main__description{
-    	padding: 15px;
+
+    .main__description {
+        padding: 15px;
     }
-    .accordeon--active{
-	height: 1203px;
-	
-}
-.feedback__stars{
-	flex-direction: column;
-}
-.stars__box{
-	margin-top: 20px;
-}
-.main__date{
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
+
+    .accordeon--active {
+        height: 1203px;
+
+    }
+
+
+
+    .stars__box {
+        margin-top: 20px;
+        flex: 0 0 50%;
+    }
+
+    .main__date {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .main__raiting {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .main__raiting_bals div{
+    	margin-left: 0;
+    }
+    .main__raiting_title div{
+    	margin-right: 0;
+    }
+    .raiting__quiz:last-child{
+    	margin-left: -45px;
+    }
+    .stars__raiting{
+    	margin-top: 10px;
+    }
 }
 
+@media (max-width: 400px){
+.stars__box {
+    margin-top: 20px;
+    flex: 0 0 40%;
+}
+.section__feedback{
+	padding: 12px;
+}
+}
