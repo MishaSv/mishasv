@@ -14,6 +14,33 @@
     
 
 <header class="header__container">
+    <div class="header__mobile">
+        <div class="container container__mobile">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobile__menu_wrap">
+                        <div class="mobile__menu_title" >Меню</div>
+                        <img src="img/mobile__header_close.svg" alt="" class="mobile__menu__img">
+                    </div>
+                    <div class="mobile__menu_string"></div>
+                    <nav class="mobile__nav">
+                        <ul class="mobile__list">
+                            <li class="mobile__list_item"><a href="">Категории</a></li>
+                            <li class="mobile__list_item"><a href="">Добавить магазин</a></li>
+                            <li class="mobile__list_item"><a href="">Жалоба</a></li>
+                            <li class="mobile__list_item"><a href="">О проекте</a></li>
+                        </ul>
+                        <div class="mobile__menu_string"></div>
+                        <ul class="mobile__list">
+                            <li class="mobile__list_item"><a href="">Пригласить друга</a></li>
+                            <li class="mobile__list_item"><a href="">Войти</a></li>
+                            <li class="mobile__list_item"><a href="">Регистрация</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container ">
         <div class="row align-items-center">
 
@@ -35,8 +62,10 @@
 
            
                 <div class="header__user">
+                    <img src="img/menu__dots.svg" alt="" class="menu__dots">
                     <div class="header__ava"><img src="img/ava.svg" alt=""></div>
                     <button class="header__btn">Жалоба</button>
+
                 </div>
                </div>
             </div>
@@ -61,10 +90,10 @@
                             </div>
                         </div>
                         <div class="main__title">blvcklimit</div>
-                        <div class="main__istagram">
+                        <a href="#" class="main__istagram">
                             <img src="img/ist.png" alt="" class="img__inst">
                             <div class="inst__title">blvcklimit</div>
-                        </div>
+                        </a>
                         <div class="main__categories">
                             Категории: <span>мужская одежда,</span> <br> <span>женская одежда</span>
                         </div>
@@ -136,19 +165,31 @@
                         <div class="feedback__title_box">
 
                             <div class="feedback__title">Оставить отзыв</div>
-                            <div class="feedback__arrow"><img src="img/feedback__arrow.svg" alt=""></div>
+                            <div class="feedback__arrow feedback__arrow accordeon__Arrow--active"><img src="img/feedback__arrow.svg" alt=""></div>
+
                         </div>
+
+                        <div class="accordeon accordeon--active">
+                            <div class="accordeon__string"></div> 
                         <div class="feedback__raiting">
+
                             <div class="raiting__quiz">
                                 <div class="quiz__title">Опыт сотрудничества</div>
                                 <div class="quiz__box">
                                     <div class="checkbox__wrapper">
-                                        <input type="radio" name="experience" class="quiz__checkbox">
-                                        <div class="">sadsa</div>
+                                        <label>
+                                            <input type="radio" name="experience" class="quiz__checkbox">
+                                            <span class="check-style"></span>
+                                            Положительный
+                                        </label>
+                                        <!-- <div class="">sadsa</div> -->
                                     </div>
                                     <div class="checkbox__wrapper">
-                                        <input type="radio" name="experience" class="quiz__checkbox">
-                                        <div class="">sadsa</div>
+                                        <label>
+                                            <input type="radio" name="experience" class="quiz__checkbox">
+                                            <span class="check-style"></span>
+                                            Негативный
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -156,12 +197,18 @@
                                 <div class="quiz__title">Опыт сотрудничества</div>
                                 <div class="quiz__box">
                                     <div class="checkbox__wrapper">
-                                        <input type="radio" name="payment" class="quiz__checkbox">
-                                        <div class="quiz__text">sadsa</div>
+                                        <label>
+                                            <input type="radio" name="payment" class="quiz__checkbox">
+                                            <span class="check-style"></span>
+                                            Наложенный платеж
+                                        </label>
                                     </div>
                                     <div class="checkbox__wrapper">
-                                        <input type="radio" name="payment" class="quiz__checkbox">
-                                        <div class="quiz__text">sadsa</div>
+                                        <label>
+                                            <input type="radio" name="payment" class="quiz__checkbox">
+                                            <span class="check-style"></span>
+                                            Перевод на карту
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -169,56 +216,63 @@
                                 <div class="quiz__title">Опыт сотрудничества</div>
                                 <div class="quiz__box">
                                     <div class="checkbox__wrapper">
-                                        <input type="radio" name="buy__again" class="quiz__checkbox">
-                                        <div class="quiz__text">sadsa</div>
+                                        <label>
+                                            <input type="radio" name="buy__again" checked class="quiz__checkbox">
+                                            <span class="check-style"></span>
+                                            Да
+                                        </label>
                                     </div>
                                     <div class="checkbox__wrapper">
-                                        <input type="radio" name="buy__again" class="quiz__checkbox">
-                                        <div class="quiz__text">sadsa</div>
+                                        <label>
+                                            <input type="radio" name="buy__again" class="quiz__checkbox">
+                                            <span class="check-style"></span>
+                                            Нет
+                                        </label>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
+                        <div class="feedback__raiting__string"></div>   
                         <div class="feedback__stars">
                         <div class="stars__box">
                             <div class="stars__title">Качество</div>
-                            <div class="stars__raiting">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
+                            <div class="stars__raiting" data-total-value='3'>
+                                <div class="stars__star" data-item-value='5'></div>
+                                <div class="stars__star" data-item-value='4'></div>
+                                <div class="stars__star" data-item-value='3'></div>
+                                <div class="stars__star" data-item-value='2'></div>
+                                <div class="stars__star" data-item-value='1'></div>
                             </div>
                         </div>
                         <div class="stars__box">
-                            <div class="stars__title">Качество</div>
-                            <div class="stars__raiting">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
+                            <div class="stars__title">Доставка</div>
+                            <div class="stars__raiting" data-total-value='2'>
+                                <div class="stars__star" data-item-value='5'></div>
+                                <div class="stars__star" data-item-value='4'></div>
+                                <div class="stars__star" data-item-value='3'></div>
+                                <div class="stars__star" data-item-value='2'></div>
+                                <div class="stars__star" data-item-value='1'></div>
                             </div>
                         </div>
                         <div class="stars__box">
-                            <div class="stars__title">Качество</div>
-                            <div class="stars__raiting">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
+                            <div class="stars__title">Стоимость</div>
+                            <div class="stars__raiting" data-total-value='4'>
+                                <div class="stars__star" data-item-value='5'></div>
+                                <div class="stars__star" data-item-value='4'></div>
+                                <div class="stars__star" data-item-value='3'></div>
+                                <div class="stars__star" data-item-value='2'></div>
+                                <div class="stars__star" data-item-value='1'></div>
                             </div>
                         </div>
                         <div class="stars__box">
-                            <div class="stars__title">Качество</div>
-                            <div class="stars__raiting">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
+                            <div class="stars__title">Проффесионализм</div>
+                            <div class="stars__raiting" data-total-value='1'>
+                                <div class="stars__star" data-item-value='5'></div>
+                                <div class="stars__star" data-item-value='4'></div>
+                                <div class="stars__star" data-item-value='3'></div>
+                                <div class="stars__star" data-item-value='2'></div>
+                                <div class="stars__star" data-item-value='1'></div>
                             </div>
                         </div>
                     </div>
@@ -235,7 +289,7 @@
                         <button class="feedback__btn_send">Отправить</button>
                     </div>
                     </div>
-
+</div>
 
 <!-- comments -->
                     <div class="section__comments">
@@ -341,7 +395,325 @@
                                 </div>
                             </div>
                         </div>
+                         <div class="commnets__string"></div>
+                         <!-- new__comment -->
+                         <div class="comment__body">
+
+                            <div class="comment__user">
+                                <div class="user__ava__section">
+                                    <div class="comment__ava"><img src="img/comment__ava.svg" alt=""></div>
+                                    <div class="comment__name">
+                                        <div class="name__title">Bessie Cooper</div>
+                                        <div class="comment__count">
+                                            <img src="img/commnet_pen.svg" alt="">
+                                            <div>2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__perks">
+                                    <div class="perks__item">Положительный</div>
+                                    <div class="perks__item">Перевод на карту</div>
+                                    <div class="perks__item">Купил бы снова</div>
+                                </div>
+                            </div>
+
+                            <div class="comment__raiting">
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="comment__text">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать пару абзацев более менее осмысленного текста рыбы на русском языке, а начинающему...
+                            </div>
+                            <div class="comment__show">
+                                <img src="img/comment__arrow.svg" alt="" class="comment__show_img">
+                                <a href="" class="commnet__show">Развернуть</a>
+                            </div>
+                            <div class="comment__info">
+                                <div class="info__social">
+                                    <div class="social__activity">
+                                        <div class="social__img"><img src="img/comment__like.svg" alt=""></div>
+                                        <div class="social__counter">12</div>
+                                    </div>
+                                    <div class="social__sharing">
+                                        <img src="img/comment__share.svg" alt="">
+                                        <div>Поделить</div>
+                                    </div>
+                                    <div class="social__report">
+                                        <img src="img/comment__flag.svg" alt="">
+                                        <div>Жалоба</div>
+                                    </div>
+                                </div>
+                                <div class="info__photos">
+                                    <div class="photos__img">
+                                        <div class="photos__img__title">Фотографии</div>
+                                        <div class="photos__wrapper">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__date">
+                                    <div class="date__time">12.23</div>
+                                    <div class="date__year">25.12.2020</div>
+                                </div>
+                            </div>
+                        </div>
+                         
+                         <!-- new__comment  -->
+
+                         <!-- new__comment -->
+
+                         <div class="comment__body comment__hidden">
+                            <div class="commnets__string"></div>
+                            <div class="comment__user">
+                                <div class="user__ava__section">
+                                    <div class="comment__ava"><img src="img/comment__ava.svg" alt=""></div>
+                                    <div class="comment__name">
+                                        <div class="name__title">Bessie Cooper</div>
+                                        <div class="comment__count">
+                                            <img src="img/commnet_pen.svg" alt="">
+                                            <div>2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__perks">
+                                    <div class="perks__item">Положительный</div>
+                                    <div class="perks__item">Перевод на карту</div>
+                                    <div class="perks__item">Купил бы снова</div>
+                                </div>
+                            </div>
+
+                            <div class="comment__raiting">
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="comment__text">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать пару абзацев более менее осмысленного текста рыбы на русском языке, а начинающему...
+                            </div>
+                            <div class="comment__show">
+                                <img src="img/comment__arrow.svg" alt="" class="comment__show_img">
+                                <a href="" class="commnet__show">Развернуть</a>
+                            </div>
+                            <div class="comment__info">
+                                <div class="info__social">
+                                    <div class="social__activity">
+                                        <div class="social__img"><img src="img/comment__like.svg" alt=""></div>
+                                        <div class="social__counter">12</div>
+                                    </div>
+                                    <div class="social__sharing">
+                                        <img src="img/comment__share.svg" alt="">
+                                        <div>Поделить</div>
+                                    </div>
+                                    <div class="social__report">
+                                        <img src="img/comment__flag.svg" alt="">
+                                        <div>Жалоба</div>
+                                    </div>
+                                </div>
+                                <div class="info__photos">
+                                    <div class="photos__img">
+                                        <div class="photos__img__title">Фотографии</div>
+                                        <div class="photos__wrapper">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__date">
+                                    <div class="date__time">12.23</div>
+                                    <div class="date__year">25.12.2020</div>
+                                </div>
+                            </div>
+                            <div class="commnets__string"></div>
+                        </div>
+                         
+                         <!-- new__comment  -->
+                         <!-- new__comment -->
+                         <div class="comment__body comment__hidden">
+
+                            <div class="comment__user">
+                                <div class="user__ava__section">
+                                    <div class="comment__ava"><img src="img/comment__ava.svg" alt=""></div>
+                                    <div class="comment__name">
+                                        <div class="name__title">Bessie Cooper</div>
+                                        <div class="comment__count">
+                                            <img src="img/commnet_pen.svg" alt="">
+                                            <div>2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__perks">
+                                    <div class="perks__item">Положительный</div>
+                                    <div class="perks__item">Перевод на карту</div>
+                                    <div class="perks__item">Купил бы снова</div>
+                                </div>
+                            </div>
+
+                            <div class="comment__raiting">
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="comment__raiting_box">
+                                    <div class="raiting_box_title">Качество</div>
+                                    <div class="raiting_box_stars">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                        <img src="img/comment_star.svg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="comment__text">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать пару абзацев более менее осмысленного текста рыбы на русском языке, а начинающему...
+                            </div>
+                            <div class="comment__show">
+                                <img src="img/comment__arrow.svg" alt="" class="comment__show_img">
+                                <a href="" class="commnet__show">Развернуть</a>
+                            </div>
+                            <div class="comment__info">
+                                <div class="info__social">
+                                    <div class="social__activity">
+                                        <div class="social__img"><img src="img/comment__like.svg" alt=""></div>
+                                        <div class="social__counter">12</div>
+                                    </div>
+                                    <div class="social__sharing">
+                                        <img src="img/comment__share.svg" alt="">
+                                        <div>Поделить</div>
+                                    </div>
+                                    <div class="social__report">
+                                        <img src="img/comment__flag.svg" alt="">
+                                        <div>Жалоба</div>
+                                    </div>
+                                </div>
+                                <div class="info__photos">
+                                    <div class="photos__img">
+                                        <div class="photos__img__title">Фотографии</div>
+                                        <div class="photos__wrapper">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                            <img src="img/comment__photo_1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info__date">
+                                    <div class="date__time">12.23</div>
+                                    <div class="date__year">25.12.2020</div>
+                                </div>
+                            </div>
+                        </div>
+                         
+                         <!-- new__comment  -->
+                         <button class="comment__btn_showMore">Загрузить ещё</button>
                     </div>
+
 <!-- comments -->
 
 
@@ -349,7 +721,7 @@
                 </div>
             </div>
             <div class="col-lg-3 display__none col-lg-9__aside">
-                <aside class="aside">
+                <aside href='#sad' class="aside">
                     <div class="aside__achievement">
                         <img src="img/shield.svg" alt="">
                         <img src="img/sign.svg" alt="">
